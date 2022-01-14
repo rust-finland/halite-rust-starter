@@ -1,11 +1,11 @@
 use crate::hlt::dropoff::Dropoff;
-use crate::hlt::DropoffId;
 use crate::hlt::input::Input;
-use crate::hlt::PlayerId;
 use crate::hlt::position::Position;
 use crate::hlt::ship::Ship;
-use crate::hlt::ShipId;
 use crate::hlt::shipyard::Shipyard;
+use crate::hlt::DropoffId;
+use crate::hlt::PlayerId;
+use crate::hlt::ShipId;
 use std::collections::HashMap;
 
 pub struct Player {
@@ -25,8 +25,8 @@ impl Player {
         dropoffs: &mut HashMap<DropoffId, Dropoff>,
         num_ships: usize,
         num_dropoffs: usize,
-        halite: usize)
-    {
+        halite: usize,
+    ) {
         self.halite = halite;
 
         self.ship_ids.clear();
@@ -50,8 +50,20 @@ impl Player {
         let shipyard_x = input.next_i32();
         let shipyard_y = input.next_i32();
 
-        let shipyard = Shipyard { owner: id, position: Position { x: shipyard_x, y: shipyard_y } };
+        let shipyard = Shipyard {
+            owner: id,
+            position: Position {
+                x: shipyard_x,
+                y: shipyard_y,
+            },
+        };
 
-        Player { id, shipyard, halite: 0, ship_ids: Vec::new(), dropoff_ids: Vec::new() }
+        Player {
+            id,
+            shipyard,
+            halite: 0,
+            ship_ids: Vec::new(),
+            dropoff_ids: Vec::new(),
+        }
     }
 }

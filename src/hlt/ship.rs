@@ -2,8 +2,8 @@ use crate::hlt::command::Command;
 use crate::hlt::direction::Direction;
 use crate::hlt::entity::Entity;
 use crate::hlt::input::Input;
-use crate::hlt::PlayerId;
 use crate::hlt::position::Position;
+use crate::hlt::PlayerId;
 use crate::hlt::ShipId;
 
 pub struct Ship {
@@ -38,7 +38,13 @@ impl Ship {
         let y = input.next_i32();
         let halite = input.next_usize();
 
-        Ship { owner: player_id, id, position: Position { x, y }, halite, max_halite }
+        Ship {
+            owner: player_id,
+            id,
+            position: Position { x, y },
+            halite,
+            max_halite,
+        }
     }
 }
 

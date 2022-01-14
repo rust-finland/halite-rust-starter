@@ -1,5 +1,5 @@
-use crate::hlt::PlayerId;
 use crate::hlt::position::Position;
+use crate::hlt::PlayerId;
 
 pub trait Entity {
     fn owner(&self) -> PlayerId;

@@ -1,8 +1,8 @@
-use crate::hlt::DropoffId;
 use crate::hlt::entity::Entity;
 use crate::hlt::input::Input;
-use crate::hlt::PlayerId;
 use crate::hlt::position::Position;
+use crate::hlt::DropoffId;
+use crate::hlt::PlayerId;
 
 pub struct Dropoff {
     pub owner: PlayerId,
@@ -27,6 +27,10 @@ impl Dropoff {
         let x = input.next_i32();
         let y = input.next_i32();
 
-        Dropoff { owner: player_id, id, position: Position { x, y } }
+        Dropoff {
+            owner: player_id,
+            id,
+            position: Position { x, y },
+        }
     }
 }
