@@ -1,15 +1,15 @@
-use hlt::command::Command;
-use hlt::constants::Constants;
-use hlt::dropoff::Dropoff;
-use hlt::DropoffId;
-use hlt::game_map::GameMap;
-use hlt::input::Input;
-use hlt::log::Log;
-use hlt::map_cell::Structure;
-use hlt::player::Player;
-use hlt::PlayerId;
-use hlt::ship::Ship;
-use hlt::ShipId;
+use crate::hlt::command::Command;
+use crate::hlt::constants::Constants;
+use crate::hlt::dropoff::Dropoff;
+use crate::hlt::DropoffId;
+use crate::hlt::game_map::GameMap;
+use crate::hlt::input::Input;
+use crate::hlt::log::Log;
+use crate::hlt::map_cell::Structure;
+use crate::hlt::player::Player;
+use crate::hlt::PlayerId;
+use crate::hlt::ship::Ship;
+use crate::hlt::ShipId;
 use std::collections::HashMap;
 
 pub struct Game {

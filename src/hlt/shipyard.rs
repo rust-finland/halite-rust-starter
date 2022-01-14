@@ -1,7 +1,7 @@
-use hlt::command::Command;
-use hlt::entity::Entity;
-use hlt::PlayerId;
-use hlt::position::Position;
+use crate::hlt::command::Command;
+use crate::hlt::entity::Entity;
+use crate::hlt::PlayerId;
+use crate::hlt::position::Position;
 
 pub struct Shipyard {
     pub owner: PlayerId,

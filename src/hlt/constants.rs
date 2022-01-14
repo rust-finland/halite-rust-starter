@@ -1,4 +1,4 @@
-use hlt::log::Log;
+use crate::hlt::log::Log;
 use std::collections::HashMap;
 use std::str::FromStr;
 

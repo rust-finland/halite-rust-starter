@@ -5,6 +5,8 @@ use std::sync::Mutex;
 use std::time::SystemTime;
 use std::time::UNIX_EPOCH;
 
+use lazy_static::lazy_static;
+
 lazy_static! {
     static ref LOG: Mutex<Log> = Mutex::new(Log::new());
 }

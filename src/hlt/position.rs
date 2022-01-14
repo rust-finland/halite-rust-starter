@@ -1,4 +1,4 @@
-use hlt::direction::Direction;
+use crate::hlt::direction::Direction;
 
 #[derive(Copy, Clone, PartialEq, Eq)]
 pub struct Position {

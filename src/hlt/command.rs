@@ -1,5 +1,5 @@
-use hlt::direction::Direction;
-use hlt::ShipId;
+use crate::hlt::direction::Direction;
+use crate::hlt::ShipId;
 
 pub struct Command(pub String);
 

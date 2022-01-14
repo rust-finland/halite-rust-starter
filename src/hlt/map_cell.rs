@@ -1,6 +1,6 @@
-use hlt::DropoffId;
-use hlt::PlayerId;
-use hlt::position::Position;
+use crate::hlt::DropoffId;
+use crate::hlt::PlayerId;
+use crate::hlt::position::Position;
 
 pub struct MapCell {
     pub position: Position,

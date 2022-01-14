@@ -1,4 +1,4 @@
-use hlt::log::Log;
+use crate::hlt::log::Log;
 use std::io::stdin;
 use std::process::exit;
 use std::str::FromStr;

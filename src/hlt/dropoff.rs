@@ -1,8 +1,8 @@
-use hlt::DropoffId;
-use hlt::entity::Entity;
-use hlt::input::Input;
-use hlt::PlayerId;
-use hlt::position::Position;
+use crate::hlt::DropoffId;
+use crate::hlt::entity::Entity;
+use crate::hlt::input::Input;
+use crate::hlt::PlayerId;
+use crate::hlt::position::Position;
 
 pub struct Dropoff {
     pub owner: PlayerId,

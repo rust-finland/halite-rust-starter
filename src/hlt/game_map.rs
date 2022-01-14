@@ -1,8 +1,8 @@
-use hlt::entity::Entity;
-use hlt::input::Input;
-use hlt::map_cell::MapCell;
-use hlt::map_cell::Structure;
-use hlt::position::Position;
+use crate::hlt::entity::Entity;
+use crate::hlt::input::Input;
+use crate::hlt::map_cell::MapCell;
+use crate::hlt::map_cell::Structure;
+use crate::hlt::position::Position;
 use std::cmp::min;
 
 pub struct GameMap {
@@ -22,11 +22,11 @@ impl GameMap {
         &mut self.cells[normalized.y as usize][normalized.x as usize]
     }
 
-    pub fn at_entity(&self, entity: &Entity) -> &MapCell {
+    pub fn at_entity(&self, entity: &dyn Entity) -> &MapCell {
         self.at_position(&entity.position())
     }
 
-    pub fn at_entity_mut(&mut self, entity: &Entity) -> &mut MapCell {
+    pub fn at_entity_mut(&mut self, entity: &dyn Entity) -> &mut MapCell {
         self.at_position_mut(&entity.position())
     }
 

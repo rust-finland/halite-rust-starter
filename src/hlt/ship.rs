@@ -1,10 +1,10 @@
-use hlt::command::Command;
-use hlt::direction::Direction;
-use hlt::entity::Entity;
-use hlt::input::Input;
-use hlt::PlayerId;
-use hlt::position::Position;
-use hlt::ShipId;
+use crate::hlt::command::Command;
+use crate::hlt::direction::Direction;
+use crate::hlt::entity::Entity;
+use crate::hlt::input::Input;
+use crate::hlt::PlayerId;
+use crate::hlt::position::Position;
+use crate::hlt::ShipId;
 
 pub struct Ship {
     pub owner: PlayerId,

@@ -1,7 +1,3 @@
-#[macro_use]
-extern crate lazy_static;
-extern crate rand;
-
 use hlt::command::Command;
 use hlt::direction::Direction;
 use hlt::game::Game;

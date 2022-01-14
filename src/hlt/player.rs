@@ -1,11 +1,11 @@
-use hlt::dropoff::Dropoff;
-use hlt::DropoffId;
-use hlt::input::Input;
-use hlt::PlayerId;
-use hlt::position::Position;
-use hlt::ship::Ship;
-use hlt::ShipId;
-use hlt::shipyard::Shipyard;
+use crate::hlt::dropoff::Dropoff;
+use crate::hlt::DropoffId;
+use crate::hlt::input::Input;
+use crate::hlt::PlayerId;
+use crate::hlt::position::Position;
+use crate::hlt::ship::Ship;
+use crate::hlt::ShipId;
+use crate::hlt::shipyard::Shipyard;
 use std::collections::HashMap;
 
 pub struct Player {

@@ -1,8 +1,8 @@
-use hlt::direction::Direction;
-use hlt::position::Position;
-use hlt::ship::Ship;
-use hlt::ShipId;
-use hlt::game::Game;
+use crate::hlt::direction::Direction;
+use crate::hlt::position::Position;
+use crate::hlt::ship::Ship;
+use crate::hlt::ShipId;
+use crate::hlt::game::Game;
 
 pub struct Navi {
     pub width: usize,
